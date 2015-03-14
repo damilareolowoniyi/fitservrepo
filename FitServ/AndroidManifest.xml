@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fitserv.androidapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+     <uses-sdk
+        android:minSdkVersion="9"
+                android:targetSdkVersion="21" />
+     <application
+         android:name="com.fitserv.app.AppController"
+         android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginType"
+            android:label="@string/login_type" >
+            <intent-filter>
+                <action android:name="com.fitserv.androidapp.LOGINTYPE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".UserLogin"
+            android:label="@string/login_user" >
+            <intent-filter>
+                <action android:name="com.fitserv.androidapp.USERLOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrainerLogin"
+            android:label="@string/trainer_login" >
+            <intent-filter>
+                <action android:name="com.fitserv.androidapp.TRAINERLOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserRegister"
+            android:label="@string/btn_register" >
+            <intent-filter>
+                <action android:name="com.fitserv.androidapp.USERREGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+        <activity
+            android:name=".PersonalTrainerRegister"
+            android:label="@string/btn_register_trainer" >
+            <intent-filter>
+                <action android:name="com.fitserv.androidapp.PERSONALTRAINERREGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fitserv.user.profilemenu.UserProfileActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.fitserv.user.profilemenu.USERPROFILEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+        
+        <activity
+            android:name="com.fitserv.personaltrainer.profilemenu.TrainerProfileActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.TRAINERPROFILEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+  <!-- Allow to connect with internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+    
+</manifest>

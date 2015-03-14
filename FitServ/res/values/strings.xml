@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FitServ</string>
+   <string name="login_type">Login as a Trainer or User</string>
+   <string name="login_user">User Login</string>
+   <string name="trainer_login">Trainer Login</string>
+   
+    <string name="action_settings">Log out</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- User Nav Drawer Menu Items -->
+    <string-array name="user_nav_drawer_items">
+        <item >Profile</item>
+        <item >Search Personal Trainer</item>
+        <item >Calendar</item>
+        <item >Workout Plans</item>
+        <item >Diet Plans</item>
+        <item >Help</item>
+    </string-array>
+    
+      <!-- Trainer Nav Drawer Menu Items -->
+    <string-array name="trainer_nav_drawer_items">
+        <item >Profile</item>
+        <item >Calendar</item>
+        <item >Clients</item>
+        <item >Schedule</item>
+     </string-array>
+    
+       <!-- User Nav Drawer List Item Icons -->
+    <!-- This is kept in order as the titles are in -->
+    <array name="user_nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+        <array name="trainer_nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+     </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+     <string name="user_reg">User Registration Form</string>
+    <string name="trainer_reg">Trainer Registration Form</string>
+    
+    <string name="hint_email">Email or Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+        <string name="hint_phone_number">Phone number(+08)</string>
+    
+    <string name="hint_username">Username</string>
+    <string name="btn_login">USER LOGIN</string>
+      <string name="btn_login_trainer">TRAINER LOGIN</string>
+    <string name="btn_register">USER REGISTER</string>
+      <string name="btn_register_trainer">TRAINER REGISTER</string>
+    
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">User Profile</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    
+    
+</resources>
