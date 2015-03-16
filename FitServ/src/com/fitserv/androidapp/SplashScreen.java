@@ -1,9 +1,9 @@
 package com.fitserv.androidapp;
 
-import android.support.v7.app.ActionBarActivity;
+ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
- public class SplashScreen extends ActionBarActivity {
+ public class SplashScreen extends Activity {
 
 	 //ref:  https://www.youtube.com/watch?v=AN5EFviJRR0
     @Override
