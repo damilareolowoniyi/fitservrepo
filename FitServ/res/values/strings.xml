@@ -13,9 +13,9 @@
     
     <!-- User Nav Drawer Menu Items -->
     <string-array name="user_nav_drawer_items">
-        <item >Profile</item>
+        <item >FitServ Profile</item>
         <item >Search Personal Trainer</item>
-        <item >Calendar</item>
+        <item >Booking Calendar</item>
         <item >Workout Plans</item>
         <item >Diet Plans</item>
         <item >Help</item>
