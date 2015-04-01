@@ -174,7 +174,7 @@ public class UserProfileActivity extends Activity {
 			fragment = new UserSearchTrainerFragment();
 			break;
 		case 2:
-			fragment = new UserCalendarFragment();
+			fragment = new UserBookingsFragment();
 			break;
 		case 3:
 			fragment = new UserWorkoutPlanFragment();

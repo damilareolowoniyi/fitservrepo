@@ -3,27 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:gravity="center"
         android:orientation="vertical" >
-
-          <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp" />
-        
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13dp" />
 
         <TextView
             android:id="@+id/username"
@@ -35,12 +24,49 @@
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iam looking for a personal trainer that is available to help me with: 	-Swimming
-            -Squating
-            -Yoga
-            -Lossing Weight  "
-            android:textSize="10dp" />
-        
+            android:layout_gravity="left"
+            android:text="Workout outs completed" />
+
+        <TextView
+            android:id="@+id/workoutcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="12"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="33dp"
+            android:text="Add a new workout" />
+
+        <TextView
+            android:id="@+id/dietdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Diet outs plans completed" />
+
+        <TextView
+            android:id="@+id/dietcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="160dp"
+            android:layout_height="34dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="40dp"
+            android:text="Add a new diet plan" />
     </LinearLayout>
 
     <ImageButton
@@ -67,16 +93,6 @@
         android:textSize="15dp" />
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/trainerlogin"
-        android:layout_marginLeft="14dp"
-        android:layout_toRightOf="@+id/trainerlogin"
-        android:text="Age: 23"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,15 +110,6 @@
         android:text="Credit: 100fz"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/trainerlogin"
-        android:layout_alignLeft="@+id/textView1"
-        android:text="Fitness: Core"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
     <SeekBar
         android:id="@+id/seekBar1"
         android:layout_width="match_parent"
@@ -110,5 +117,24 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/trainerlogin" 
         />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
    
 </RelativeLayout>

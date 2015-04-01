@@ -72,11 +72,11 @@ public class UserWorkoutPlanFragment extends ListFragment {
  				// Launching create new workouts activity
  				Intent i = new Intent(getActivity(), NewWorkout.class);
  				startActivity(i);
- 				
  			}
  		});
          return rootView;
 	}
+	
 	@Override 
 	 public void onViewCreated (View view, Bundle savedInstanceState) {
   	
@@ -88,7 +88,7 @@ public class UserWorkoutPlanFragment extends ListFragment {
  		new LoadAllWorkouts().execute();
 
  		// Get listview
- 	// Get listview
+ 		// Get listview
  			ListView lv = getListView();
  			
  			// on seleting single product

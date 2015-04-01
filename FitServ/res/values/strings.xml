@@ -15,7 +15,7 @@
     <string-array name="user_nav_drawer_items">
         <item >FitServ Profile</item>
         <item >Search Personal Trainer</item>
-        <item >Booking Calendar</item>
+        <item >Your Bookings</item>
         <item >Workout Plans</item>
         <item >Diet Plans</item>
         <item >Help</item>
@@ -24,7 +24,7 @@
       <!-- Trainer Nav Drawer Menu Items -->
     <string-array name="trainer_nav_drawer_items">
         <item >Profile</item>
-        <item >Calendar</item>
+        <item >Booked Calendar</item>
         <item >Clients</item>
         <item >Schedule</item>
      </string-array>
@@ -53,7 +53,7 @@
      <string name="user_reg">User Registration Form</string>
     <string name="trainer_reg">Trainer Registration Form</string>
     
-    <string name="hint_email">Email or Username</string>
+    <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_name">Fullname</string>
         <string name="hint_phone_number">Phone number(+08)</string>
@@ -70,5 +70,11 @@
     <string name="btn_logout">LOGOUT</string>
     <string name="name">Fullname</string>
     
+    <string name="ranklabel">"Rating : "</string>
+    <string name="countrylabel">"Location : "</string>
+    <string name="populationlabel">"About me : "</string>
+
+      <string name="gender_prompt">Select day you want to be trained</string>
+         <string name="time_prompt">Select time you want to be trained</string>
     
 </resources>
