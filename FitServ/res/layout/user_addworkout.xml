@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+        android:background="@drawable/workout"
+    >
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Workout Name"
+        android:textSize="17dip" />
+
+    <!-- Input Name -->
+
+    <EditText
+        android:id="@+id/inputWorkoutName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:singleLine="true" />
+
+    
+    <!-- Price Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Workout Date"
+        android:textSize="17dip" />
+
+    <!-- Input Price -->
+
+    <EditText
+        android:id="@+id/inputWorkoutDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <!-- Description Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Excerise Name"
+        android:textSize="17dip" />
+
+    <!-- Input description -->
+
+    <EditText
+        android:id="@+id/inputExceriseName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:lines="4" />
+    
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Number of Sets"
+        android:textSize="17dip" />
+
+    <!-- Input description -->
+
+    <EditText
+        android:id="@+id/inputSets"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:lines="4" />
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="The Weight your using? kg"
+        android:textSize="17dip" />
+
+    <!-- Input description -->
+
+    <EditText
+        android:id="@+id/inputKg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:lines="4" />
+    
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="The amount of reps you want to do"
+        android:textSize="17dip" />
+
+    <!-- Input description -->
+
+    <EditText
+        android:id="@+id/inputReps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:lines="4" />
+    
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="The Notes for workout"
+        android:textSize="17dip" />
+        
+         <EditText
+        android:id="@+id/inputNotes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:text="text"
+         android:gravity="top"
+        android:lines="4" />
+
+    <!-- Input description -->
+
+    
+    
+    <!-- Button Create Product -->
+
+    <Button
+        android:id="@+id/btnCreateWorkout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Workout Plan" />
+
+</LinearLayout>
+
+</ScrollView>

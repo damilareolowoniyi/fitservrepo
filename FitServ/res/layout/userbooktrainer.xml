@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/headInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Trainer"
+            android:gravity="center"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/trainername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a certified Trainer!"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTICE: These are the trainers available Days\n
+              Monday: 8AM-9PM \n
+              Tuesday: 8AM-9PM \n
+              Wednesday: 8AM-1OPM \n
+              Thursday: 7AM-10PM \n
+              Friday 9AM-10PM \n
+            "
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+          <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Provide a Subject for Training"
+            android:textColor="#19D175"
+            android:textSize="12dp" />
+        <!-- Gender Spinner -->
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Booking for Squats workout"
+             android:textSize="12dp" />
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#19D175"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Joe Blogs"
+             android:textSize="12dp" />
+        
+        
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textColor="#19D175"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Co Dublin"
+             android:textSize="12dp" />
+        
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the day you want to start"
+            android:textColor="#19D175"
+            android:textSize="12dp" />
+        <!-- Gender Spinner -->
+
+        <EditText
+            android:id="@+id/starttime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="2015-01-01"
+            android:textSize="12dp" />
+
+        <!-- Gender Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the day you want to finish"
+            android:textColor="#19D175"
+            android:textSize="12dp" 
+            />
+        <!-- Gender Spinner -->
+
+        <EditText
+            android:id="@+id/endtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="2015-01-01"
+            android:textSize="12dp" />
+
+        <!-- Age Label -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:text="Add description for this booking"
+            android:textColor="#19D175"
+            android:textSize="12dp" />
+        <!-- Age TextField -->
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="top"
+            android:lines="4"
+            android:text=""
+            android:textSize="12dp" />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#19D175"
+            android:shadowColor="#3e3e3e"
+            android:text="Confirm  Booking Now"
+            android:textColor="#fff"
+            android:width="150dp" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Go back to Trainers list"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

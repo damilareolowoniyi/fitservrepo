@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/featuredImg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/dare" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ranklabel"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/image_border"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#00000c"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/headInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trainers Information"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/headAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availablility"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\n
+              Monday: 8AM-9PM \n
+             Tuesday: 8AM-9PM \n
+             Wednesday: 8AM-1OPM \n
+             Thursday: 7AM-10PM \n
+             Friday 9AM-10PM \n
+            "
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/headReviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/reviews2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Richard: Best trainer from my areat, Top class trainer 5 stars here! Helped me achieve my fitness goals :-)"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/headRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating, Qualifcation"
+            android:textColor="#19D175"
+            android:textSize="17dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#00000c" />
+
+            <TextView
+                android:id="@+id/countrylabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#00000c" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#00000c" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/populationlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#00000c" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#00000c" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/qualification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/bookbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:background="#19D175"
+                android:shadowColor="#3e3e3e"
+                android:text="Book Trainer Now"
+                android:textColor="#fff"
+                android:width="150dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
