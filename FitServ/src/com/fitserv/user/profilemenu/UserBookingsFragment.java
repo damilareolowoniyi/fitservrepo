@@ -126,7 +126,7 @@ public class UserBookingsFragment extends ListFragment  {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(getActivity());
-			pDialog.setMessage("Loading your confirmed Bookings, Please wait...");
+			pDialog.setMessage("Loading Completed Bookings, Please wait...");
 			//pDialog.setMessage("almost done...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(false);

@@ -7,7 +7,7 @@
         android:id="@+id/search"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="location" >
+        android:hint="Search trainer by location" >
 
         <requestFocus />
     </EditText>

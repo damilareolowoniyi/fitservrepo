@@ -82,9 +82,9 @@ public class UserSearchTrainerFragment extends Fragment  {
  		rating = new String[] { "5", "5", "4", "4", "3", "2", "1", "1", "1",
  				"1" };
 
- 		location = new String[] { "Lucan", "Lusk", "Blanchestown",
- 				"Balbriggan", "Swords", "Tallaght", "Malahide", "Finglas",
- 				"Santry", "Crumlin" };
+ 		location = new String[] { "Glasnevin, Dublin ", "Ballymun, Dublin", "Finglas, Dublin",
+ 				"Whitehall Dublin", "Albert College Park, Dublin ", "Shanowen Road, Dublin", "Courtlands Road, Dublin", "Santry dublin",
+ 				"St Patricks College, Drumcondra, Dublin", "DCU Soccer Centre, Dublin" };
 
  		details = new String[] {
  				"A vastly  sales training to a wide range of Irish companies both large and small.",
@@ -98,8 +98,8 @@ public class UserSearchTrainerFragment extends Fragment  {
  				"Being involved in professional sales for over 25 years",
  				" I believe in a very practical and people orientated approach to business. A genuine interest" };
 
- 		reviews = new String[] { "Dav Love this trainer ",
- 				"AlexBest trainer going ", "tommy amazing trainer ",
+ 		reviews = new String[] { "Dav: Love this trainer ",
+ 				"AlexBest trainer going ", "tommy: amazing trainer ",
  				"Glen Hes the best ", "Chris Jones", "Davo Hes so good",
  				"Chris I love this guy", "Dacz helped me in weeks ",
  				"D Nger forget this guy", "John Hes perfect" };
@@ -111,18 +111,18 @@ public class UserSearchTrainerFragment extends Fragment  {
  				"DCU  Trainers Work Course ", "TCD Trainer Degree A1",
  				"DCU Mean Degree A ", "Trainers Live Degree B" };
 
- 		fullname = new String[] { "Damilare Olowoniyi", "Dele Shako ",
- 				"Kevin Mustong", "Sam Smith ", "Chris Jones", "Alex Prorv",
- 				"David Lanks", "Owen Smith", "Alex Furgo", "Johnjo Meals" };
+ 		fullname = new String[] { "Damilare Olowoniyi", "Sean White",
+ 				"Kevin Mustong ", "Chris Jones", "Alex Prorv",
+ 				"Jake Mike", "Links Dans", "Owen Smith", "Johnjo Meals","Alex Flex" };
 
  		email = new String[] { "damilareolowoniyi@yahoo.com",
- 				"deleshako@yahoo.com ", "kevinmustong@gmail.com",
- 				"samsmith@gmail.com", "chrisjone@gmail.com",
- 				"alexprov@hotmail.com", "davidlanks@gymfit.com",
+ 				"seanwhite@yahoo.com ", "kevinmustong@fisterv.com",
+ 				"chrisjones@gmail.com", "alexprov@gmail.com",
+ 				"jake@gmail.com", "owensmith@gymfit.com",
  				"owensmith@gymsmart.com", "alexf@mail.com", "johns@gmail.com" };
 
- 		username = new String[] { "cashdaz", "delezo ", "kevinto", "samino",
- 				"jonny boy", "alexprovs", "lanksIn", "OwenIt", "AlexFlex",
+ 		username = new String[] { "cashdaz", "seanwhite ", "kevin", "chrisjones",
+ 				"alexprov", "jman", "lanksIn", "OwenIt", "AlexFlex",
  				"MisterMuscle" };
 
  		// Locate the ListView in listview_main.xml

@@ -11,7 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.fitserv.androidapp.R;
-
 import android.app.ListFragment;
 import android.app.ProgressDialog;
 import android.content.Intent;

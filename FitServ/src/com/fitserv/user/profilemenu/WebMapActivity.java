@@ -4,8 +4,8 @@ package com.fitserv.user.profilemenu;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.ProgressDialog;
 
 import android.content.Context;
@@ -24,13 +24,15 @@ public class WebMapActivity extends Activity {
   private WebView browser;
   private LocationManager myLocationManager=null;
   
-  @Override
+ @Override
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
  
     final ProgressDialog builder = new ProgressDialog(this);
     builder.setTitle("Location based map view");
-    builder.setMessage("Checking your current location to load the personal trainers nearest to you.. please wait");
+    builder.setMessage("Hi, FitServ is now" +
+    		"checking your current location to load the personal trainers nearest to you..." +
+    		" please wait, thank you");
     builder.setCancelable(true);
        builder.show();
 
@@ -40,11 +42,9 @@ public class WebMapActivity extends Activity {
         	builder.dismiss(); // when the task active then close the dialog
             t.cancel(); // also just top the timer thread, otherwise, you may receive a crash report
         }
-    }, 4000); // after 10 second (or 2000 miliseconds), the task will be active.
+    }, 30000); // after 30 second (or 9000 miliseconds), the task will be active.
  
 	
-	
-    
     setContentView(R.layout.main);
     browser=(WebView)findViewById(R.id.webview);
     
@@ -52,7 +52,7 @@ public class WebMapActivity extends Activity {
     
     browser.getSettings().setJavaScriptEnabled(true);
     browser.addJavascriptInterface(new Locater(), "locater");
-    browser.loadUrl("http://ec2-54-77-51-119.eu-west-1.compute.amazonaws.com/usermap.html");
+    browser.loadUrl("http://ec2-54-77-51-119.eu-west-1.compute.amazonaws.com/trainermap2.html");
    }
   
   @Override

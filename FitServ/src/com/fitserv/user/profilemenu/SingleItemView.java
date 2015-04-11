@@ -45,8 +45,7 @@ public class SingleItemView extends Activity {
 		qualifcation = i.getStringExtra("qualifcation");
 		email = i.getStringExtra("email");
 		username = i.getStringExtra("username");
-
-		
+ 
 		// Locate the TextViews in singleitemview.xml
 		txtrating = (TextView) findViewById(R.id.rating);
 		txtlocation = (TextView) findViewById(R.id.location);
@@ -66,7 +65,6 @@ public class SingleItemView extends Activity {
 		txtqualifcations.setText(qualifcation);
 		txtemail.setText(email);
 		txtusername.setText(username);
-		
 		  Button booktrainer = (Button) findViewById(R.id.bookbt);
 
 	        booktrainer.setOnClickListener(new View.OnClickListener() {

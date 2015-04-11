@@ -15,7 +15,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:text="Edit Workout or Delete Workout"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView

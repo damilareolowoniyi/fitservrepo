@@ -1,85 +1,218 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:padding="5dp"
+      >
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:gravity="center"
+        android:background="#ffffff"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="37dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" 
+          >
+
+            <ImageView
+                android:id="@+id/featuredImg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/usergym" >
+            </ImageView>
+
+      	     <TextView
+                android:id="@+id/ranklabel"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/image_border"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#00000c"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/headInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="Workout outs completed" />
+            android:text="Your Information"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
 
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+        
+          <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+               <Button
+                   android:id="@+id/diet"
+                   android:layout_width="236dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal|top"
+                   android:background="#afa5f2"
+                   android:shadowColor="#afa5f2"
+                   android:text="Create a new diet plan"
+                   android:textColor="#fff"
+                   android:width="150dp" />
+
+            </ScrollView>
+        </GridLayout>
+        
+       <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+               <Button
+                   android:id="@+id/workout"
+                   android:layout_width="236dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal|top"
+                   android:background="#FFC0CB"
+                   android:shadowColor="#3e3e3e"
+                   android:text="Create a new workout plan"
+                   android:textColor="#fff"
+                   android:width="150dp" />
+
+            </ScrollView>
+        </GridLayout>
+        
         <TextView
-            android:id="@+id/workoutcount"
+            android:id="@+id/headAvailable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="12"
-            android:textStyle="bold" />
+            android:text="About me "
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
 
-        <Button
-            android:id="@+id/button1"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_gravity="left"
-            android:layout_marginBottom="33dp"
-            android:text="Add a new workout" />
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
 
-        <TextView
-            android:id="@+id/dietdescription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="Diet outs plans completed" />
-
-        <TextView
-            android:id="@+id/dietcount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="0"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button2"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="160dp"
-            android:layout_height="34dp"
-            android:layout_gravity="left"
-            android:layout_marginBottom="40dp"
-            android:text="Add a new diet plan" />
-    </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/trainerlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:background="#00000000"
-        android:src="@drawable/user1" />
-
-    <Button
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Im looking for a personal trainer that can help me acheive my goals"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+        
+       <Button
         android:id="@+id/btnLogout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -91,50 +224,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="15dp" />
+        
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/trainerlogin"
-        android:layout_toLeftOf="@+id/trainerlogin"
-        android:text="Gender: Female"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/trainerlogin"
-        android:layout_alignLeft="@+id/textView2"
-        android:text="Credit: 100fz"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <SeekBar
-        android:id="@+id/seekBar1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/trainerlogin" 
-        />
-
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignRight="@+id/linearLayout1"
-        android:layout_marginRight="30dp"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <TextView
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/name"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-   
-</RelativeLayout>
+</ScrollView>

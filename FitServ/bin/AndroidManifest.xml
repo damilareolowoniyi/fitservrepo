@@ -121,6 +121,58 @@
                 <action android:name="com.fitserv.user.profilemenu.USERBOOKTRAINER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        		</activity>
+        		 <activity android:name="com.fitserv.user.profilemenu.NewDietPlan" >
+            <intent-filter>
+                <action android:name="com.fitserv.user.profilemenu.NEWDIETPLAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        		</activity>
+        	 <activity android:name="com.fitserv.user.profilemenu.EditDietPlan" >
+            <intent-filter>
+                <action android:name="com.fitserv.user.profilemenu.EDITDIETPLAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        		</activity>
+       <activity android:name="com.fitserv.personaltrainer.profilemenu.AddClient" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.ADDCLIENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               <activity android:name="com.fitserv.personaltrainer.profilemenu.EditClient" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.EDITCLIENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity android:name="com.fitserv.personaltrainer.profilemenu.NewTrainerWorkout" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.NEWTRAINERWORKOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity android:name="com.fitserv.personaltrainer.profilemenu.EditTrainerWorkouts" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.EDITTRAINERWORKOUTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fitserv.personaltrainer.profilemenu.NewTrainerDietPlan" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.NEWTRAINERDIETPLAN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity android:name="com.fitserv.personaltrainer.profilemenu.EditTrainerDietPlan" >
+            <intent-filter>
+                <action android:name="com.fitserv.personaltrainer.profilemenu.EDITTRAINERDIETPLAN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

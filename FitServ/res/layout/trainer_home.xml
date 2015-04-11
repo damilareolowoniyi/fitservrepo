@@ -1,52 +1,237 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:padding="5dp" >
+
     <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
+        android:background="#ffffff"
         android:orientation="vertical" >
 
-           <TextView
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp" />
-        
-        <TextView
-            android:id="@+id/email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="13dp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/featuredImg"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/trainergym" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ranklabel"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/image_border"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#00000c"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/headInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="37dp" />
+            android:text="Your Information"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/About"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iam looking for a personal trainer that is available to help me with:
- 			-Swimming
-            -Squating
-            -Yoga
-            -Lossing Weight"
-            android:textSize="10dp" />
+            android:text="About Me"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Im a personal trainer Located in Co Dublin and I&apos;m mainly based near finglas, swords, DCU, and santry."
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/headAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Availablility"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/avail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\n
+		             Monday: 8AM-9PM \n
+		             Tuesday: 8AM-9PM \n
+		             Wednesday: 8AM-1OPM \n
+		             Thursday: 7AM-10PM \n
+		             Friday 9AM-10PM \n"
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Clients"
+            android:textColor="#19D175"
+            android:textSize="20dp" />
+
+        <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top|left|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:columnCount="2"
+            android:padding="10dp" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/clients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\n
+					Dele  - Finglas Co Dublin \n  
+					Dayo John - Santry Co Dublin \n
+					Kevin - DCU Co Dublin \n"  
+                    android:textColor="#00000c" />
+            </ScrollView>
+        </GridLayout>
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="39dp"
             android:background="@color/btn_logut_bg"
             android:text="@string/btn_logout"
             android:textAllCaps="false"
@@ -54,13 +239,4 @@
             android:textSize="15dp" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/userlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#00000000"
-        android:src="@drawable/pt1" />
-   
-</RelativeLayout>
+</ScrollView>

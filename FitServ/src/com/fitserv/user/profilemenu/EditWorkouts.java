@@ -116,7 +116,7 @@ public class EditWorkouts extends Activity {
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(EditWorkouts.this);
-			pDialog.setMessage("Loading product details. Please wait...");
+			pDialog.setMessage("Loading workouts details. Please wait...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();

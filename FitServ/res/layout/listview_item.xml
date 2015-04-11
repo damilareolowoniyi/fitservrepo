@@ -33,9 +33,10 @@
         android:id="@+id/populationlabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/star"
         android:layout_below="@+id/countrylabel"
-        android:text="@string/populationlabel"
-        android:padding="5dp" />
+        android:padding="5dp"
+        android:text="@string/populationlabel" />
 
     <TextView
         android:id="@+id/details"
@@ -62,6 +63,15 @@
         android:layout_alignParentTop="true"
         android:src="@drawable/dare" />
 
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fullnamelabel"
+        android:layout_alignBottom="@+id/fullnamelabel"
+        android:layout_alignLeft="@+id/location"
+      />
+
     <RatingBar
         android:id="@+id/star"
         style="?android:attr/ratingBarStyleSmall"
@@ -73,14 +83,5 @@
         android:numStars="5"
         android:padding="8dp"
         android:stepSize="0.1" />
-
-    <TextView
-        android:id="@+id/fullname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/fullnamelabel"
-        android:layout_alignBottom="@+id/fullnamelabel"
-        android:layout_alignLeft="@+id/location"
-      />
 
 </RelativeLayout>

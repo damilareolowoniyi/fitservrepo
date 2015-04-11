@@ -62,12 +62,16 @@ public class TrainerProfileActivity extends Activity {
 		// adding nav drawer items to array
 		// Home
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
-		// Find People
+		// Bookings
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-		// Photos
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "30"));
-		// Communities, Will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "10"));
+		// Clients
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "2"));
+ 		// Workout plans
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(2, -1)));
+ 		// Diet plans
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(2, -1)));
+ 		// Schdule
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(3, -1), true, "10"));
 		// Pages
 
 		// Recycle the typed array
@@ -169,12 +173,18 @@ public class TrainerProfileActivity extends Activity {
 			fragment = new  TrainerHomeFragment();
 			break;
 		case 1:
-			fragment = new TrainerCalenderFragment();
+			fragment = new TrainerBookingsFragment();
 			break;
 		case 2:
 			fragment = new TrainerClientsFragment();
 			break;
 		case 3:
+			fragment = new TrainerWorkoutPlanFragment();
+			break;
+		case 4:
+			fragment = new TrainerDietPlanFragment();
+			break;
+		case 5:
 			fragment = new TrainerScheduleFragment();
 			break;
 
