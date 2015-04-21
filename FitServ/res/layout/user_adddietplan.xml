@@ -2,8 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" 
-    android:background="@color/bg_login"
-    >
+    android:background="#20B2AA"
+     >
 <LinearLayout 
      android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -17,19 +17,19 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="Workout Name"
+        android:text="Diet Name"
         android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input Name -->
 
     <EditText
-        android:id="@+id/inputWorkoutName"
+        android:id="@+id/inputDietName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:singleLine="true" />
 
     
@@ -41,20 +41,20 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="Workout Date"
+        android:text="Date you want to start diet"
         android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input Price -->
 
     <EditText
-        android:id="@+id/inputWorkoutDate"
+        android:id="@+id/inputDietDate"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
+        android:background="@color/white"
         android:inputType="text"
-     	android:background="@color/white"
         android:singleLine="true" />
 
     <!-- Description Label -->
@@ -65,21 +65,21 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="Excerise Name"
+        android:text="Food Name"
         android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input description -->
 
     <EditText
-        android:id="@+id/inputExceriseName"
+        android:id="@+id/inputFoodName"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -88,21 +88,21 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="Number of Sets"
+        android:text="Enter the Size"
         android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input description -->
 
     <EditText
-        android:id="@+id/inputSets"
+        android:id="@+id/inputSize"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:lines="4" />
 
         <TextView
@@ -111,44 +111,21 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="The Weight your using? kg"
+        android:text="They amount of Calories"
         android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input description -->
 
     <EditText
-        android:id="@+id/inputKg"
+        android:id="@+id/inputTotalCal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
-        android:lines="4" />
-    
-        <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip"
-        android:paddingTop="10dip"
-        android:text="The amount of reps you want to do"
-        android:textColor="@color/white"
-        android:textSize="17dip" />
-
-    <!-- Input description -->
-
-    <EditText
-        android:id="@+id/inputReps"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dip"
-        android:layout_marginBottom="15dip"
-         android:inputType="text"
-         android:gravity="top"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -157,34 +134,114 @@
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:text="The Notes for workout"
+        android:text="Amount of Protein?"
+        android:textColor="@color/white"
+        android:textSize="17dip" />
+
+    <!-- Input description -->
+
+    <EditText
+        android:id="@+id/inputProtein"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:background="@color/white"
+        android:lines="4" />
+    
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Amount of Carbohydrates?"
         android:textColor="@color/white"
         android:textSize="17dip" />
         
          <EditText
-        android:id="@+id/inputNotes"
+        android:id="@+id/inputCarbs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+        android:background="@color/white"
+         android:gravity="top"
+        android:lines="4" />
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textColor="@color/white"
+        android:text="Amount of Fats"
+        android:textSize="17dip" />
+        
+         <EditText
+        android:id="@+id/inputFat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:background="@color/white"
+        android:lines="4" />
+         
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Amount of Meal Time"
+        android:textColor="@color/white"
+        android:textSize="17dip" />
+        
+         <EditText
+        android:id="@+id/inputMealTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+         android:inputType="text"
+         android:gravity="top"
+        android:background="@color/white"
+        android:lines="4" />
+         
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Provide a Note for yourself"
+        android:textColor="@color/white"
+        android:textSize="17dip" />
+        
+         <EditText
+        android:id="@+id/inputDietNotes"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
          android:text=""
          android:gravity="top"
-     	android:background="@color/white"
-        android:lines="4" />
-
-    <!-- Input description -->
-
-    
-    
+        android:background="@color/white"
+        android:lines="4" />   
+         
     <!-- Button Create Product -->
 
     <Button
-        android:id="@+id/btnCreateWorkout"
+        android:id="@+id/btnCreateDiet"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/btn_login_bg"
-		android:textColor="@color/btn_login" 
-        android:text="Create Workout Plan" />
+         android:text="Create Diet Plan" />
 
 </LinearLayout>
 

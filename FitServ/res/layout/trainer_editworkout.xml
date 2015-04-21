@@ -12,6 +12,14 @@
     <!-- Name Label -->
 
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Workout or Delete Workout"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dip"
@@ -29,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:singleLine="true" />
 
     
@@ -43,6 +51,7 @@
         android:paddingTop="10dip"
         android:text="Workout Date"
         android:textColor="@color/white"
+        
         android:textSize="17dip" />
 
     <!-- Input Price -->
@@ -54,7 +63,7 @@
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
         android:inputType="text"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:singleLine="true" />
 
     <!-- Description Label -->
@@ -79,7 +88,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -102,7 +111,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
 
         <TextView
@@ -125,7 +134,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -148,7 +157,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -169,23 +178,29 @@
         android:layout_marginBottom="15dip"
          android:text=""
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
 
-    <!-- Input description -->
-
     
-    
-    <!-- Button Create Product -->
-
-    <Button
-        android:id="@+id/btnCreateWorkout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/btn_login_bg"
-		android:textColor="@color/btn_login" 
-        android:text="Create Workout Plan" />
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <!-- Button Create Product -->
+	<Button android:id="@+id/btnSave" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Save Changes"
+	    android:layout_weight="1"/>
+	
+	<!-- Button Create Product -->
+	<Button android:id="@+id/btnDelete" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Finished"
+	    android:layout_weight="1"/>	    
+	</LinearLayout>    
 
 </LinearLayout>
+
 
 </ScrollView>

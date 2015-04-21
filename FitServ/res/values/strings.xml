@@ -45,9 +45,9 @@
     <array name="trainer_nav_drawer_icons">
         <item>@drawable/ic_home</item>
         <item>@drawable/ic_people</item>
-        <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_pages</item>
-       	<item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_communities</item>
+       	<item>@drawable/ic_pages</item>
         <item>@drawable/ic_communities</item>
     </array>
 
@@ -68,10 +68,10 @@
     <string name="btn_link_to_login">Already registred! Login Me.</string>
     <string name="welcome">User Profile</string>
     <string name="btn_logout">LOGOUT</string>
-    <string name="name">Fullname</string>
-    <string name="ranklabel">"Rating : "</string>
-    <string name="countrylabel">"Location : "</string>
-    <string name="populationlabel">"About me : "</string>
+    <string name="name">Full Name</string>
+    <string name="ranklabel">"Rating: "</string>
+    <string name="countrylabel">"Location: "</string>
+    <string name="populationlabel">"About: "</string>
     <string name="gender_prompt">Select day you want to be trained</string>
     <string name="time_prompt">Select time you want to be trained</string>
 

@@ -1,4 +1,4 @@
-package com.fitserv.user.profilemenu;
+package com.fitserv.personaltrainer.profilemenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,8 +11,6 @@ import org.json.JSONObject;
 import com.fitserv.androidapp.R;
 import com.fitserv.user.profilemenu.JSONParser;
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -24,7 +22,7 @@ import android.widget.EditText;
 
 
 
-public class NewWorkout extends Activity {
+public class NewTrainerWorkout extends Activity {
 
 	// Progress Dialog
 	private ProgressDialog pDialog;
@@ -40,7 +38,7 @@ public class NewWorkout extends Activity {
 
 
 	// url to create new product
-	private static String url_create_workout = "http://ec2-54-77-51-119.eu-west-1.compute.amazonaws.com/android_connect/create_workout.php";
+	private static String url_create_workout = "http://ec2-54-77-51-119.eu-west-1.compute.amazonaws.com/android_connect/create_trainerworkoutplan.php";
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
@@ -48,7 +46,7 @@ public class NewWorkout extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.user_addworkout);
+		setContentView(R.layout.trainer_addworkout);
 
 		// Edit Text
 		inputWorkoutName = (EditText) findViewById(R.id.inputWorkoutName);
@@ -83,12 +81,12 @@ public class NewWorkout extends Activity {
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			pDialog = new ProgressDialog(NewWorkout.this);
+			pDialog = new ProgressDialog(NewTrainerWorkout.this);
 			pDialog.setMessage("Creating Your Workout Plan..");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
- 		}
+		}
 
 		/**
 		 * Creating product
@@ -126,24 +124,17 @@ public class NewWorkout extends Activity {
 
 				if (success == 1) {
 					// successfully created product
-					Intent i = new Intent(getApplicationContext(), UserProfileActivity.class);
+					Intent i = new Intent(getApplicationContext(), TrainerProfileActivity.class);
 					startActivity(i);
-					
-					//closing this screen
+					 //closing this screen
 					finish();
- 					
-					//Fragment newFragment = new UserWorkoutPlanFragment();
-					  // FragmentTransaction transaction = getFragmentManager().beginTransaction();
-					   //transaction.replace(R.id.frame_container, newFragment);
-					    //transaction.commit();
 					
-					//UserWorkoutPlanFragment fd = new UserWorkoutPlanFragment();
-				    // FragmentTransaction  ft =
-				    //getFragmentManager().beginTransaction();
-				              //     ft.replace(R.id.frame_container, fd); // content_frame is your FrameLayout container
- 				                 //  ft.addToBackStack(null);
-				                 //  ft.commit();  
- 					
+					// Fragment newFragment = new UserWorkoutPlanFragment();
+					   // FragmentTransaction transaction = getFragmentManager().beginTransaction();
+					   // transaction.replace(R.id.g, newFragment);
+					   // transaction.commit();
+				   
+					
 				} else {
 					// failed to create product
 				}
@@ -160,7 +151,6 @@ public class NewWorkout extends Activity {
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
 			pDialog.dismiss();
- 
 		}
 
 	}

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" 
     android:background="@color/bg_login"
-    >
+     >
 <LinearLayout 
      android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         android:paddingRight="10dip"
         android:paddingTop="10dip"
         android:text="Workout Name"
-        android:textColor="@color/white"
+       android:textColor="@color/white"
         android:textSize="17dip" />
 
     <!-- Input Name -->
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:singleLine="true" />
 
     
@@ -54,7 +54,7 @@
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
         android:inputType="text"
-     	android:background="@color/white"
+        android:background="@color/white"
         android:singleLine="true" />
 
     <!-- Description Label -->
@@ -79,7 +79,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -100,9 +100,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
-         android:inputType="text"
-         android:gravity="top"
-     	android:background="@color/white"
+        android:inputType="text"
+        android:gravity="top"
+        android:background="@color/white"
         android:lines="4" />
 
         <TextView
@@ -125,7 +125,7 @@
         android:layout_marginBottom="15dip"
          android:inputType="text"
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
     
         <TextView
@@ -146,9 +146,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dip"
         android:layout_marginBottom="15dip"
-         android:inputType="text"
-         android:gravity="top"
-     	android:background="@color/white"
+        android:background="@color/white"
+        android:inputType="text"
+        android:gravity="top"
         android:lines="4" />
     
         <TextView
@@ -169,22 +169,18 @@
         android:layout_marginBottom="15dip"
          android:text=""
          android:gravity="top"
-     	android:background="@color/white"
+         android:background="@color/white"
         android:lines="4" />
 
     <!-- Input description -->
 
-    
-    
     <!-- Button Create Product -->
 
     <Button
         android:id="@+id/btnCreateWorkout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@color/btn_login_bg"
-		android:textColor="@color/btn_login" 
-        android:text="Create Workout Plan" />
+        android:text="Create Workout Plan for User" />
 
 </LinearLayout>
 

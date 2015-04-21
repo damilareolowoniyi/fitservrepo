@@ -225,12 +225,14 @@ public class TrainerBookingsFragment extends ListFragment {
 
  						// updating listview
 						setListAdapter(adapter);
- 						AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+	AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 						
   						//need the popupButton to trigger this dialog box
  						builder.setTitle("Notification - You have New Bookings");
- 			            builder.setMessage("You can cancel or confirm these bookings");
-			            builder.setPositiveButton("Ok! No Problem",null);
+ 			            builder.setMessage("Hi Trainer," +
+ 			            		"Two users have booked you, please check the times and location" +
+ 			            		"for the booking.");
+			            builder.setPositiveButton("Great, Thanks ",null);
 			            final AlertDialog alert = builder.create();
 			          
 			            getActivity().runOnUiThread(new java.lang.Runnable(){
@@ -239,6 +241,7 @@ public class TrainerBookingsFragment extends ListFragment {
  			            		alert.show();
 			                }
 			            });
+						
 						
   						/**
  						popupButton = (Button) getActivity().findViewById(R.id.CancelBookings);

@@ -6,79 +6,64 @@
     android:padding="5dp" >
 
    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ffffff"
-        android:orientation="vertical" >
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#ffffff"
+       android:orientation="vertical" >
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="200dp" >
+       <RelativeLayout
+           android:layout_width="fill_parent"
+           android:layout_height="200dp" >
 
-            <ImageView
-                android:id="@+id/featuredImg"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:src="@drawable/date" >
-            </ImageView>
+           <ImageView
+               android:id="@+id/featuredImg"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:src="@drawable/date" >
+           </ImageView>
 
-            <TextView
-                android:id="@+id/ranklabel"
-                android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_alignParentBottom="true"
-                android:background="@drawable/image_border"
-                android:ellipsize="end"
-                android:gravity="bottom"
-                android:lineSpacingExtra="3dp"
-                android:maxLines="2"
-                android:padding="5dp"
-                android:text=""
-                android:textColor="#00000c"
-                android:textStyle="bold" />
-        </RelativeLayout>
+           <TextView
+               android:id="@+id/ranklabel"
+               android:layout_width="fill_parent"
+               android:layout_height="100dp"
+               android:layout_alignParentBottom="true"
+               android:background="@drawable/image_border"
+               android:ellipsize="end"
+               android:gravity="bottom"
+               android:lineSpacingExtra="3dp"
+               android:maxLines="2"
+               android:padding="5dp"
+               android:text=""
+               android:textColor="#00000c"
+               android:textStyle="bold" />
+       </RelativeLayout>
 
+       <TextView
+           android:id="@+id/headAvailable"
+           android:layout_width="278dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.70"
+           android:text="Schedule for this week"
+           android:textColor="#19D175"
+           android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/headAvailable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Schedule Monday to friday"
-            android:textColor="#19D175"
-            android:textSize="20dp" />
-
-        <GridLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="top|left|center_horizontal"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:background="#f3f3f3"
-            android:columnCount="2"
-            android:padding="10dp" >
-
-            <ScrollView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:padding="3dp" >
-
-                <TextView
-                    android:id="@+id/avail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="\n
-                    List will go here: Loading all times for trainers Booking
-		             Monday: 8AM-9PM \n
-		             Tuesday: 8AM-9PM \n
-		             Wednesday: 8AM-1OPM \n
-		             Thursday: 7AM-10PM \n
-		             Friday 9AM-10PM \n"
-                    android:textColor="#00000c" />
-            </ScrollView>
+       <GridLayout
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_gravity="top|left|center_horizontal"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:background="#f3f3f3"
+           android:columnCount="2"
+           android:padding="10dp" >
+  
+               <ListView
+                   android:id="@android:id/list"
+                   android:layout_width="wrap_content"
+                   android:layout_height="187dp"
+                   android:layout_gravity="left" />
         </GridLayout>
-
-
-    </LinearLayout>
+   </LinearLayout>
 
 </ScrollView>

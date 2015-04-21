@@ -7,12 +7,14 @@
         android:id="@+id/ranklabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="10dp"
         android:text="@string/ranklabel" />
 
     <TextView
         android:id="@+id/rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="10dp"
         android:layout_toRightOf="@+id/ranklabel" />
 
     <TextView
@@ -20,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ranklabel"
+        android:textSize="10dp"
         android:text="@string/countrylabel" />
 
     <TextView
@@ -27,22 +30,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rating"
+        android:textSize="10dp"
         android:layout_toRightOf="@+id/countrylabel" />
-
-    <TextView
-        android:id="@+id/populationlabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/star"
-        android:layout_below="@+id/countrylabel"
-        android:padding="5dp"
-        android:text="@string/populationlabel" />
 
     <TextView
         android:id="@+id/details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/location"
+          android:textSize="10dp"
         android:layout_toRightOf="@+id/populationlabel" />
     
     <TextView
@@ -52,6 +48,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignRight="@+id/countrylabel"
         android:layout_below="@+id/star"
+        android:textSize="10dp"
         android:text="Fullname" />
     
     <ImageView
@@ -61,7 +58,7 @@
         android:layout_alignBottom="@+id/fullname"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/dare" />
+        android:src="@drawable/personaltrainer" />
 
     <TextView
         android:id="@+id/fullname"
@@ -70,7 +67,18 @@
         android:layout_alignBaseline="@+id/fullnamelabel"
         android:layout_alignBottom="@+id/fullnamelabel"
         android:layout_alignLeft="@+id/location"
+        android:textSize="10dp"
       />
+
+    <TextView
+        android:id="@+id/populationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/countrylabel"
+        android:padding="5dp"
+        android:textSize="10dp"
+        android:text="@string/populationlabel" />
 
     <RatingBar
         android:id="@+id/star"
